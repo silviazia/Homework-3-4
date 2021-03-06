@@ -5,8 +5,10 @@
 ## Background
 
 Harold's company has been investing in algorithmic trading strategies. Some of the investment managers love them, some hate them, but they all think their way is best.
-We just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to us with a challenge—to help him determine which portfolio is performing the best across multiple areas: volatility, returns, risk, and Sharpe ratios.
-We need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others.
+
+You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across multiple areas: volatility, returns, risk, and Sharpe ratios.
+
+You need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P TSX 60 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
 
 For this homework assignment, you have three main tasks:
 
@@ -22,15 +24,19 @@ For this homework assignment, you have three main tasks:
 
 **Files:**
 
-* [whale Analysis](whale_analysis.ipynb)
-* [algo_returns.csv](Data/algo_returns.csv)
-* [otex_historical.csv](Data/otex_historical.csv)
-* [sp_tsx_history.csv](Data/sp_tsx_history.csv)
-* [l_historical.csv](Data/l_historical.csv)
-* [shop_historical.csv](Data/shop_historical.csv)
-* [whale_returns.csv](Data/whale_returns.csv)
-![returns-dataframe.png](Images/returns-dataframe.png)
+* [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb)
 
+* [algo_returns.csv](Starter_Code/Resources/algo_returns.csv)
+
+* [otex_historical.csv](Starter_Code/Resources/otex_historical.csv)
+
+* [sp_tsx_history.csv](Starter_Code/Resources/sp_tsx_history.csv)
+
+* [l_historical.csv](Starter_Code/Resources/l_historical.csv)
+
+* [shop_historical.csv](Starter_Code/Resources/shop_historical.csv)
+
+* [whale_returns.csv](Starter_Code/Resources/whale_returns.csv)
 
 ### Prepare the Data
 
@@ -56,15 +62,13 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 
 ### Conduct Quantitative Analysis
 
-Below we analyzed the data to see if any of the portfolios outperform the stock market (i.e., the S&P TSX 60).
+Analyze the data to see if any of the portfolios outperform the stock market (i.e., the S&P TSX 60).
 
 #### Performance Analysis
 
 1. Calculate and plot daily returns of all portfolios.
 
-2. Calculate and plot cumulative returns for all portfolios. Does any portfolio outperform the S&P TSX 60? Does any portfolio outperform the S&P TSX 60?**
-
-Yes, `Algo 1` followed by `BERKSHIRE HATHAWAY INC`.
+2. Calculate and plot cumulative returns for all portfolios. Does any portfolio outperform the S&P TSX 60?
 
 #### Risk Analysis
 
@@ -74,9 +78,6 @@ Yes, `Algo 1` followed by `BERKSHIRE HATHAWAY INC`.
 
 3. Determine which portfolios are riskier than the S&P TSX 60
 
-> `TIGER GLOBAL MANAGEMENT LLC`
-> `BERKSHIRE HATHAWAY INC`
-
 4. Calculate the Annualized Standard Deviation.
 
 #### Rolling Statistics
@@ -85,10 +86,7 @@ Yes, `Algo 1` followed by `BERKSHIRE HATHAWAY INC`.
 
 2. Calculate and plot the correlation between each stock to determine which portfolios may mimick the S&P TSX 60.
 
-> `Algo 2` & `SOROS FUND MANAGEMENT LLC` are most closely mimic the S&P TSX 60. 
-
 3. Choose one portfolio, then calculate and plot the 60-day rolling beta for it and the S&P TSX 60.
-
 
 #### Rolling Statistics Challenge: Exponentially Weighted Average
 
@@ -101,8 +99,6 @@ Investment managers and their institutional investors look at the return-to-risk
 1. Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
 2. Determine whether the algorithmic strategies outperform both the market (S&P TSX 60) and the whales portfolios.
-
-> Yes, `Algorithmic strategies` **outperformed** S&P TSX and the whales portfolios
 
 ### Create a Custom Portfolio
 
@@ -126,7 +122,7 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 4. How does your portfolio do?
 
-> My custom portfolio is doing well compared to Whales and S&P TSX, just like Algorithmic trading porfolios.
+---
 
 ## Resources
 
